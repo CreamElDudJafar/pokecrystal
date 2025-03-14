@@ -1,4 +1,4 @@
-ContestMons:
+ContestMons::
 	;   %, species,   min, max
 	db  9, PINECO,     30, 31
 	db 10, YANMA,      30, 31
