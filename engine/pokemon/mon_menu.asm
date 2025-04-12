@@ -307,7 +307,7 @@ SwapPartyItem:
 	ld a, [wSwitchMon]
 	dec a
 	call AddNTimes
-	ld [hl], "▷"
+	ld [hl], '▷'
 	call WaitBGMap
 	call SetDefaultBGPAndOBP
 	call DelayFrame
@@ -1330,7 +1330,7 @@ PlaceMoveData:
 
 .printed_category
 	hlcoord 10, 13
-	ld [hl], "/"
+	ld [hl], '/'
 	call PlaceString
 
 ; Print move effect chance
