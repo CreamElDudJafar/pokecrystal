@@ -32,6 +32,7 @@ RadioJumptable:
 	dw PokeFluteRadio    ; $08
 	dw UnownRadio        ; $09
 	dw EvolutionRadio    ; $0a
+	dw NationalPark      ; $0b
 	assert_table_length NUM_RADIO_CHANNELS
 ; OaksPKMNTalk
 	dw OaksPKMNTalk2     ; $0b
@@ -1417,6 +1418,12 @@ UnownRadio:
 	ret
 
 EvolutionRadio:
+	call StartRadioStation
+	ld a, 1
+	ld [wNumRadioLinesPrinted], a
+	ret
+
+NationalPark:
 	call StartRadioStation
 	ld a, 1
 	ld [wNumRadioLinesPrinted], a
