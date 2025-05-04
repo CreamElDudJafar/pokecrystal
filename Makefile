@@ -56,6 +56,7 @@ RGBGFXFLAGS  ?= -Weverything
 ### Build targets
 
 .SUFFIXES:
+.PHONY: all crystal crystal11 crystal_au d crystal11_debug clean tidy compare tools
 .SECONDEXPANSION:
 .PRECIOUS:
 .SECONDARY:
@@ -76,7 +77,7 @@ all: crystal
 crystal:         pokecrystal.gbc
 crystal11:       pokecrystal11.gbc
 crystal_au:      pokecrystal_au.gbc
-crystal_debug:   pokecrystal_debug.gbc
+d:               pokecrystal_debug.gbc
 crystal11_debug: pokecrystal11_debug.gbc
 crystal11_vc:    pokecrystal11.patch
 
@@ -120,7 +121,10 @@ tools:
 	$(MAKE) -C tools/
 
 
-RGBASMFLAGS += -Q8 -P includes.asm
+d:
+	tools/free_space.awk BANK=all pokecrystal_debug.map
+
+RGBASMFLAGS = -Q8 -P includes.asm -Weverything -Wnumeric-string=2 -Wtruncation=1
 # Create a sym/map for debug purposes if `make` run with `DEBUG=1`
 ifeq ($(DEBUG),1)
 RGBASMFLAGS += -E

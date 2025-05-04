@@ -1,6 +1,11 @@
 DefaultOptions:
-; wOptions: med text speed
+; wOptions: fast text speed
+if DEF(_DEBUG)
+; wOptions: instal text speed
+	db TEXT_DELAY_FAST
+else
 	db TEXT_DELAY_MED
+endc
 ; wSaveFileExists: no
 	db FALSE
 ; wTextboxFrame: frame 1

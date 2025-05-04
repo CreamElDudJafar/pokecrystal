@@ -30,9 +30,8 @@ DEF DEBUGROOMMENU_NUM_PAGES EQU const_value
 	const DEBUGROOMMENUITEM_BT_BUG_POKE  ; 14
 
 _DebugRoom:
+	; Press "A" alone on "DEBUG ROOM" to get access
 	ldh a, [hJoyDown]
-	and PAD_SELECT | PAD_START
-	cp PAD_SELECT | PAD_START
 	ret nz
 	ldh a, [hDebugRoomMenuPage]
 	push af
