@@ -10,23 +10,29 @@ ENDM
 OddEggProbabilities:
 ; entries correspond to OddEggs (below)
 	table_width 2
-; Pichu
+; Bulbsaur
 	odd_egg_prob 8
+; Charmander
 	odd_egg_prob 1
-; Cleffa
+; Squirtle
 	odd_egg_prob 16
+; Cyndaquil
 	odd_egg_prob 3
-; Igglybuff
+; Chikorita
 	odd_egg_prob 16
+; Totodile
 	odd_egg_prob 3
-; Smoochum
+; Eevee
 	odd_egg_prob 14
+; Smoochum
 	odd_egg_prob 2
-; Magby
+; Dratini
 	odd_egg_prob 10
+; Magby
 	odd_egg_prob 2
-; Elekid
+; Larvitar
 	odd_egg_prob 12
+; Elekid
 	odd_egg_prob 2
 ; Tyrogue
 	odd_egg_prob 10
@@ -37,9 +43,9 @@ OddEggProbabilities:
 OddEggs:
 	table_width NICKNAMED_MON_STRUCT_LENGTH
 
-	db PICHU
+	db BULBASAUR
 	db NO_ITEM
-	db THUNDERSHOCK, CHARM, DIZZY_PUNCH, 0
+	db GIGA_DRAIN, SLEEP_POWDER, SYNTHESIS, BODY_SLAM
 	dw 02048 ; OT ID
 	bigdt 125 ; Exp
 	; Stat exp
@@ -48,8 +54,8 @@ OddEggs:
 	bigdw 0
 	bigdw 0
 	bigdw 0
-	dn 0, 0, 0, 0 ; DVs
-	db 30, 20, 10, 0 ; PP
+	dn 10, 10, 10, 10 ; DVs
+	db 5, 5, 5, 5 ; PP
 	db 20 ; Step cycles to hatch
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 5 ; Level
@@ -63,9 +69,9 @@ OddEggs:
 	bigdw 8 ; SDef
 	dname "EGG", MON_NAME_LENGTH
 
-	db PICHU
+	db CHARMANDER
 	db NO_ITEM
-	db THUNDERSHOCK, CHARM, DIZZY_PUNCH, 0
+	db FIRE_PUNCH, BODY_SLAM, OUTRAGE, SEISMIC_TOSS
 	dw 00256 ; OT ID
 	bigdt 125 ; Exp
 	; Stat exp
@@ -74,8 +80,8 @@ OddEggs:
 	bigdw 0
 	bigdw 0
 	bigdw 0
-	dn 2, 10, 10, 10 ; DVs
-	db 30, 20, 10, 0 ; PP
+	dn 10, 10, 10, 10 ; DVs
+	db 5, 5, 5, 5 ; PP
 	db 20 ; Step cycles to hatch
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 5 ; Level
@@ -89,9 +95,9 @@ OddEggs:
 	bigdw 9 ; SDef
 	dname "EGG", MON_NAME_LENGTH
 
-	db CLEFFA
+	db SQUIRTLE
 	db NO_ITEM
-	db POUND, CHARM, DIZZY_PUNCH, 0
+	db BUBBLEBEAM, ICE_BEAM, SEISMIC_TOSS, BODY_SLAM
 	dw 04096 ; OT ID
 	bigdt 125 ; Exp
 	; Stat exp
@@ -100,8 +106,8 @@ OddEggs:
 	bigdw 0
 	bigdw 0
 	bigdw 0
-	dn 0, 0, 0, 0 ; DVs
-	db 35, 20, 10, 0 ; PP
+	dn 10, 10, 10, 10 ; DVs
+	db 5, 5, 5, 5 ; PP
 	db 20 ; Step cycles to hatch
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 5 ; Level
@@ -115,9 +121,9 @@ OddEggs:
 	bigdw 10 ; SDef
 	dname "EGG", MON_NAME_LENGTH
 
-	db CLEFFA
+	db CYNDAQUIL
 	db NO_ITEM
-	db POUND, CHARM, DIZZY_PUNCH, 0
+	db FLAME_WHEEL, DOUBLE_EDGE, QUICK_ATTACK, 0
 	dw 00768 ; OT ID
 	bigdt 125 ; Exp
 	; Stat exp
@@ -126,8 +132,8 @@ OddEggs:
 	bigdw 0
 	bigdw 0
 	bigdw 0
-	dn 2, 10, 10, 10 ; DVs
-	db 35, 20, 10, 0 ; PP
+	dn 10, 10, 10, 10 ; DVs
+	db 5, 5, 5, 0 ; PP
 	db 20 ; Step cycles to hatch
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 5 ; Level
@@ -141,9 +147,9 @@ OddEggs:
 	bigdw 11 ; SDef
 	dname "EGG", MON_NAME_LENGTH
 
-	db IGGLYBUFF
+	db CHIKORITA
 	db NO_ITEM
-	db SING, CHARM, DIZZY_PUNCH, 0
+	db GIGA_DRAIN, SYNTHESIS, LIGHT_SCREEN, REFLECT
 	dw 04096 ; OT ID
 	bigdt 125 ; Exp
 	; Stat exp
@@ -152,8 +158,8 @@ OddEggs:
 	bigdw 0
 	bigdw 0
 	bigdw 0
-	dn 0, 0, 0, 0 ; DVs
-	db 15, 20, 10, 0 ; PP
+	dn 10, 10, 10, 10 ; DVs
+	db 5, 5, 5, 0 ; PP
 	db 20 ; Step cycles to hatch
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 5 ; Level
@@ -167,9 +173,9 @@ OddEggs:
 	bigdw 7 ; SDef
 	dname "EGG", MON_NAME_LENGTH
 
-	db IGGLYBUFF
+	db TOTODILE
 	db NO_ITEM
-	db SING, CHARM, DIZZY_PUNCH, 0
+	db BUBBLEBEAM, CRUNCH, DOUBLE_EDGE, ICE_BEAM
 	dw 00768 ; OT ID
 	bigdt 125 ; Exp
 	; Stat exp
@@ -178,8 +184,8 @@ OddEggs:
 	bigdw 0
 	bigdw 0
 	bigdw 0
-	dn 2, 10, 10, 10 ; DVs
-	db 15, 20, 10, 0 ; PP
+	dn 10, 10, 10, 10 ; DVs
+	db 5, 5, 5, 5 ; PP
 	db 20 ; Step cycles to hatch
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 5 ; Level
@@ -193,9 +199,9 @@ OddEggs:
 	bigdw 8 ; SDef
 	dname "EGG", MON_NAME_LENGTH
 
-	db SMOOCHUM
+	db EEVEE
 	db NO_ITEM
-	db POUND, LICK, DIZZY_PUNCH, 0
+	db QUICK_ATTACK, BODY_SLAM, BITE, REFLECT
 	dw 03584 ; OT ID
 	bigdt 125 ; Exp
 	; Stat exp
@@ -204,8 +210,8 @@ OddEggs:
 	bigdw 0
 	bigdw 0
 	bigdw 0
-	dn 0, 0, 0, 0 ; DVs
-	db 35, 30, 10, 0 ; PP
+	dn 10, 10, 10, 10 ; DVs
+	db 5, 5, 5, 5 ; PP
 	db 20 ; Step cycles to hatch
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 5 ; Level
@@ -221,7 +227,7 @@ OddEggs:
 
 	db SMOOCHUM
 	db NO_ITEM
-	db POUND, LICK, DIZZY_PUNCH, 0
+	db LOVELY_KISS, ICE_PUNCH, PSYCHIC_M, 0
 	dw 00512 ; OT ID
 	bigdt 125 ; Exp
 	; Stat exp
@@ -231,7 +237,7 @@ OddEggs:
 	bigdw 0
 	bigdw 0
 	dn 2, 10, 10, 10 ; DVs
-	db 35, 30, 10, 0 ; PP
+	db 5, 5, 5, 5 ; PP
 	db 20 ; Step cycles to hatch
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 5 ; Level
@@ -245,9 +251,9 @@ OddEggs:
 	bigdw 12 ; SDef
 	dname "EGG", MON_NAME_LENGTH
 
-	db MAGBY
+	db DRATINI
 	db NO_ITEM
-	db EMBER, DIZZY_PUNCH, 0, 0
+	db THUNDER_WAVE, SAFEGUARD, OUTRAGE, DOUBLE_EDGE
 	dw 02560 ; OT ID
 	bigdt 125 ; Exp
 	; Stat exp
@@ -256,8 +262,8 @@ OddEggs:
 	bigdw 0
 	bigdw 0
 	bigdw 0
-	dn 0, 0, 0, 0 ; DVs
-	db 25, 10, 0, 0 ; PP
+	dn 10, 10, 10, 10 ; DVs
+	db 5, 5, 5, 5 ; PP
 	db 20 ; Step cycles to hatch
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 5 ; Level
@@ -273,7 +279,7 @@ OddEggs:
 
 	db MAGBY
 	db NO_ITEM
-	db EMBER, DIZZY_PUNCH, 0, 0
+	db FIRE_PUNCH, CROSS_CHOP, CONFUSE_RAY, PSYCHIC_M
 	dw 00512 ; OT ID
 	bigdt 125 ; Exp
 	; Stat exp
@@ -282,8 +288,8 @@ OddEggs:
 	bigdw 0
 	bigdw 0
 	bigdw 0
-	dn 2, 10, 10, 10 ; DVs
-	db 25, 10, 0, 0 ; PP
+	dn 10, 10, 10, 10 ; DVs
+	db 5, 5, 5, 5 ; PP
 	db 20 ; Step cycles to hatch
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 5 ; Level
@@ -297,9 +303,9 @@ OddEggs:
 	bigdw 11 ; SDef
 	dname "EGG", MON_NAME_LENGTH
 
-	db ELEKID
+	db LARVITAR
 	db NO_ITEM
-	db QUICK_ATTACK, LEER, DIZZY_PUNCH, 0
+	db CRUNCH, ROCK_SLIDE, EARTHQUAKE, RETURN
 	dw 03072 ; OT ID
 	bigdt 125 ; Exp
 	; Stat exp
@@ -308,8 +314,8 @@ OddEggs:
 	bigdw 0
 	bigdw 0
 	bigdw 0
-	dn 0, 0, 0, 0 ; DVs
-	db 30, 30, 10, 0 ; PP
+	dn 10, 10, 10, 10 ; DVs
+	db 5, 5, 5, 5 ; PP
 	db 20 ; Step cycles to hatch
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 5 ; Level
@@ -325,7 +331,7 @@ OddEggs:
 
 	db ELEKID
 	db NO_ITEM
-	db QUICK_ATTACK, LEER, DIZZY_PUNCH, 0
+	db THUNDERPUNCH, CROSS_CHOP, THUNDER_WAVE, PSYCHIC_M
 	dw 00512 ; OT ID
 	bigdt 125 ; Exp
 	; Stat exp
@@ -334,8 +340,8 @@ OddEggs:
 	bigdw 0
 	bigdw 0
 	bigdw 0
-	dn 2, 10, 10, 10 ; DVs
-	db 30, 30, 10, 0 ; PP
+	dn 10, 10, 10, 10 ; DVs
+	db 5, 5, 5, 5 ; PP
 	db 20 ; Step cycles to hatch
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 5 ; Level
@@ -351,7 +357,7 @@ OddEggs:
 
 	db TYROGUE
 	db NO_ITEM
-	db TACKLE, DIZZY_PUNCH, 0, 0
+	db MACH_PUNCH, DIZZY_PUNCH, HI_JUMP_KICK, 0
 	dw 02560 ; OT ID
 	bigdt 125 ; Exp
 	; Stat exp
@@ -360,8 +366,8 @@ OddEggs:
 	bigdw 0
 	bigdw 0
 	bigdw 0
-	dn 0, 0, 0, 0 ; DVs
-	db 35, 10, 0, 0 ; PP
+	dn 10, 10, 10, 10 ; DVs
+	db 5, 5, 5, 0 ; PP
 	db 20 ; Step cycles to hatch
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 5 ; Level
@@ -377,7 +383,7 @@ OddEggs:
 
 	db TYROGUE
 	db NO_ITEM
-	db TACKLE, DIZZY_PUNCH, 0, 0
+	db HI_JUMP_KICK, DIZZY_PUNCH, MACH_PUNCH, 0
 	dw 00256 ; OT ID
 	bigdt 125 ; Exp
 	; Stat exp
@@ -386,8 +392,8 @@ OddEggs:
 	bigdw 0
 	bigdw 0
 	bigdw 0
-	dn 2, 10, 10, 10 ; DVs
-	db 35, 10, 0, 0 ; PP
+	dn 7, 10, 10, 10 ; DVs
+	db 5, 5, 5, 0 ; PP
 	db 20 ; Step cycles to hatch
 	db 0, 0, 0 ; Pokerus, Caught data
 	db 5 ; Level
