@@ -11,34 +11,34 @@ OddEggProbabilities:
 ; entries correspond to OddEggs (below)
 	table_width 2
 ; Bulbsaur
-	odd_egg_prob 8
+	dw $1249
 ; Charmander
-	odd_egg_prob 1
+	dw $2492
 ; Squirtle
-	odd_egg_prob 16
+	dw $36DB
 ; Cyndaquil
-	odd_egg_prob 3
+	dw $4924 
 ; Chikorita
-	odd_egg_prob 16
+	dw $5B6D
 ; Totodile
-	odd_egg_prob 3
+	dw $6DB6
 ; Eevee
-	odd_egg_prob 14
+	dw $7FFF
 ; Smoochum
-	odd_egg_prob 2
+	dw $9248
 ; Dratini
-	odd_egg_prob 10
+	dw $A491
 ; Magby
-	odd_egg_prob 2
+	dw $B6DA
 ; Larvitar
-	odd_egg_prob 12
+	dw $C923
 ; Elekid
-	odd_egg_prob 2
+	dw $DB6C
 ; Tyrogue
-	odd_egg_prob 10
-	odd_egg_prob 1
+	dw $EDB5 
+	dw $FFFF 
 	assert_table_length NUM_ODD_EGGS
-	assert odd_egg_prob_total == 100, "OddEggProbabilities sum to {d:odd_egg_prob_total}%, not 100%!"
+;;;;;;;	assert odd_egg_prob_total == 100, "OddEggProbabilities sum to {d:odd_egg_prob_total}%, not 100%!"
 
 OddEggs:
 	table_width NICKNAMED_MON_STRUCT_LENGTH
