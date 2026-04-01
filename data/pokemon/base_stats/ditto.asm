@@ -1,12 +1,12 @@
 	db DITTO ; 132
 
-	db  48,  48,  48,  48,  48,  48
+	db  100,  48, 100, 140,  48, 100
 	;   hp  atk  def  spd  sat  sdf
 
 	db NORMAL, NORMAL ; type
-	db 35 ; catch rate
+	db 10 ; catch rate
 	db 61 ; base exp
-	db NO_ITEM, NO_ITEM ; items
+	db METAL_POWDER, METAL_POWDER ; items
 	db GENDER_UNKNOWN ; gender ratio
 	db 100 ; unknown 1
 	db 20 ; step cycles to hatch
