@@ -307,7 +307,7 @@ IndigoPlateauPokecenter1F_MapEvents:
 	warp_event  5, 13, ROUTE_23, 1
 	warp_event  6, 13, ROUTE_23, 2
 	warp_event  0, 13, POKECENTER_2F, 1
-	warp_event 14,  3, WILLS_ROOM, 1
+	warp_event 17,  0, WILLS_ROOM, 1
 
 	def_coord_events
 	coord_event 16,  4, SCENE_INDIGOPLATEAUPOKECENTER1F_RIVAL_BATTLE, PlateauRivalBattle1
