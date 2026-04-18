@@ -572,6 +572,15 @@ HOF_AnimatePlayerPic:
 	hlcoord 0, 12
 	lb bc, 4, 18
 	call Textbox
+	hlcoord 31, 0
+	lb bc, 2, 7
+	call Textbox
+	hlcoord 32, 1
+	ld de, .Crystal
+	call PlaceString
+	hlcoord 32, 2
+	ld de, .Kaizo
+	call PlaceString
 	hlcoord 2, 4
 	ld de, wPlayerName
 	call PlaceString
@@ -603,3 +612,9 @@ HOF_AnimatePlayerPic:
 
 .PlayTime:
 	db "PLAY TIME@"
+
+.Crystal:
+	db "Crystal@"
+
+.Kaizo:
+	db "Kaizo@"

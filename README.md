@@ -24,6 +24,7 @@ CREDITS: Remaking Crystal Kaizo in disassembly could not have been done without 
 - SHF for creating Crystal Kaizo and updating it in 2025/2026
 - Swampert/Swampert Tools for allowing me to read some of the code without reading Hex
 - Gold Finger/HxD hex editors for reading the Crystal Kaizo Hex code
+- CRzShadows for game name in Hall of Fame
 - Pret for disassembly of Pokemon Crystak
 - DigitalZeroDomain for G2Map
 - Guzeinbuick for Gen 2 Toolbox tools and all creators of tools: https://www.pokecommunity.com/threads/gen-ii-toolbox-hacking-gsc-without-dissassemblies-in-2023.491799/
