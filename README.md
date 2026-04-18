@@ -2,6 +2,8 @@
 
 This is a disassembly of Pokémon Crystal Kaizo.
 
+<img width="848" height="681" alt="ck" src="https://github.com/user-attachments/assets/9b270ece-a426-410b-acd1-862152769f5b" />
+
 Crystal Kaizo started as a binary/hex edit hack by SinisterHoodedFigure (SHF).
 
 A few years later, the Pret disassembly of Pokemon Crystal was completed.
