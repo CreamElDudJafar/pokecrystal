@@ -26,8 +26,8 @@ TinTower4F_MapEvents:
 	def_warp_events
 	warp_event 16, 15, TIN_TOWER_5F, 2
 	warp_event 18,  1, TIN_TOWER_3F, 2
-	warp_event  2,  7, TIN_TOWER_5F, 3
-	warp_event  2, 15, TIN_TOWER_5F, 4
+	warp_event  2,  7, TIN_TOWER_3F, 2
+	warp_event  2, 15, TIN_TOWER_3F, 1
 
 	def_coord_events
 

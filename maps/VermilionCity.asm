@@ -50,10 +50,10 @@ VermilionSnorlax:
 .Awake:
 	writetext VermilionCityRadioNearSnorlaxText
 	pause 15
-	cry SNORLAX
+	cry SNORLAX ; Should be Ditto
 	closetext
 	loadvar VAR_BATTLETYPE, BATTLETYPE_FORCEITEM
-	loadwildmon SNORLAX, 50
+	loadwildmon DITTO, 69
 	startbattle
 	disappear VERMILIONCITY_BIG_SNORLAX
 	setevent EVENT_FOUGHT_SNORLAX

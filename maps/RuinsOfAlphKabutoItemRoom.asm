@@ -10,13 +10,13 @@ RuinsOfAlphKabutoItemRoom_MapScripts:
 	def_callbacks
 
 RuinsOfAlphKabutoItemRoomBerry:
-	itemball BERRY
+	itemball RARE_CANDY
 
 RuinsOfAlphKabutoItemRoomPsncureberry:
-	itemball PSNCUREBERRY
+	itemball RARE_CANDY
 
 RuinsOfAlphKabutoItemRoomHealPowder:
-	itemball HEAL_POWDER
+	itemball RARE_CANDY
 
 RuinsOfAlphKabutoItemRoomEnergypowder:
 	itemball ENERGYPOWDER

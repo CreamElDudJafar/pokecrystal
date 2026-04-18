@@ -315,13 +315,13 @@ SaffronGym_MapEvents:
 	warp_event  5,  5, SAFFRON_GYM, 6
 	warp_event 11,  3, SAFFRON_GYM, 7
 	warp_event  1,  5, SAFFRON_GYM, 8
-	warp_event 19,  5, SAFFRON_GYM, 9
-	warp_event  9,  3, SAFFRON_GYM, 10
-	warp_event 19, 15, SAFFRON_GYM, 11
-	warp_event  5, 15, SAFFRON_GYM, 12
-	warp_event  5, 11, SAFFRON_GYM, 13
-	warp_event  9,  5, SAFFRON_GYM, 14
-	warp_event 15, 11, SAFFRON_GYM, 15
+	warp_event  9,  3, SAFFRON_GYM, 9
+	warp_event 19, 15, SAFFRON_GYM, 10
+	warp_event  5, 15, SAFFRON_GYM, 11
+	warp_event  5, 11, SAFFRON_GYM, 12
+	warp_event  9,  5, SAFFRON_GYM, 13
+	warp_event 15, 11, SAFFRON_GYM, 14
+	warp_event 15,  3, SAFFRON_GYM, 15
 	warp_event  1,  3, SAFFRON_GYM, 16
 	warp_event 11,  9, SAFFRON_GYM, 17
 
@@ -332,8 +332,8 @@ SaffronGym_MapEvents:
 
 	def_object_events
 	object_event  9,  8, SPRITE_SABRINA, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, SaffronGymSabrinaScript, -1
-	object_event 11,  8, SPRITE_GRANNY, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 3, TrainerMediumRebecca, -1
-	object_event 11, 10, SPRITE_YOUNGSTER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerPsychicFranklin, -1
-	object_event  8, 16, SPRITE_GRANNY, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 2, TrainerMediumDoris, -1
-	object_event 19, 16, SPRITE_YOUNGSTER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerPsychicJared, -1
+	object_event 11,  8, SPRITE_GRANNY, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 3, TrainerMediumRebecca, -1
+	object_event 11, 10, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerPsychicFranklin, -1
+	object_event  8, 16, SPRITE_GRANNY, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 2, TrainerMediumDoris, -1
+	object_event 19, 16, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerPsychicJared, -1
 	object_event  9, 14, SPRITE_GYM_GUIDE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, SaffronGymGuideScript, -1

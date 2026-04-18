@@ -16,8 +16,8 @@ KantoGrassWildMons:
 	db 100, DUGTRIO
 	db 100, MAGNETON
 	db 100, SANDSLASH
-	db 100, DONPHAN
 	db 100, DUNSPARCE
+	db 100, DONPHAN
 	db 100, MAROWAK
 	db 100, DIGLETT
 	; nite
@@ -587,7 +587,7 @@ KantoGrassWildMons:
 	db 100, VENOMOTH
 	db 100, NIDOQUEEN
 	db 99,  HAUNTER
-	db 100, BEEDRILL
+	db 100, NIDOKING
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_17

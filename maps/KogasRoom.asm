@@ -91,7 +91,7 @@ KogaScript_KogaBeforeText:
 	line "will confound and"
 	cont "destroy you!"
 
-	para "Confusion, sleep,"
+	para "Evasion, sleep,  " ; not sure why SHF did it this way
 	line "poison…"
 
 	para "Prepare to be the"

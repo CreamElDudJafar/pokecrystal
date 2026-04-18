@@ -31,7 +31,7 @@ TinTowerHoOh:
 	closetext
 	setevent EVENT_FOUGHT_HO_OH
 	loadvar VAR_BATTLETYPE, BATTLETYPE_FORCEITEM
-	loadwildmon HO_OH, 60
+	loadwildmon HO_OH, 100
 	startbattle
 	disappear TINTOWERROOF_HO_OH
 	reloadmapafterbattle
@@ -46,7 +46,7 @@ TinTowerRoof_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
-	warp_event  8, 13, TIN_TOWER_9F, 4
+	warp_event  8, 13, TIN_TOWER_3F, 1
 
 	def_coord_events
 

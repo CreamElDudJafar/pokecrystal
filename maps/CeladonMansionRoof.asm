@@ -37,7 +37,7 @@ CeladonMansionRoof_MapEvents:
 	def_warp_events
 	warp_event  1,  1, CELADON_MANSION_3F, 1
 	warp_event  6,  1, CELADON_MANSION_3F, 4
-	warp_event  2,  5, CELADON_MANSION_ROOF_HOUSE, 1
+	warp_event  2,  5, ROUTE_16_FUCHSIA_SPEECH_HOUSE, 1
 
 	def_coord_events
 

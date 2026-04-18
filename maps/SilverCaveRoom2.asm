@@ -27,7 +27,7 @@ SilverCaveRoom2_MapEvents:
 	warp_event 17, 33, SILVER_CAVE_ROOM_1, 2
 	warp_event 17,  1, SILVER_CAVE_ROOM_3, 1
 	warp_event 15, 21, SILVER_CAVE_ITEM_ROOMS, 1
-	warp_event 23,  3, SILVER_CAVE_ITEM_ROOMS, 2
+	warp_event 23,  5, SILVER_CAVE_ITEM_ROOMS, 2
 
 	def_coord_events
 

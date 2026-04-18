@@ -307,10 +307,6 @@ WillGroup: ; Not Sure Why SHF did it this way?
 	db MIRACLEBERRY
 	db MIRACLEBERRY
 	db -1 ; end
-	db 130, SLOWBRO, $00
-	db BURN_HEAL
-	db METAL_COAT
-	db -1 ; end
 
 PKMNTrainerGroup:
 	; CAL (1)
@@ -318,7 +314,10 @@ PKMNTrainerGroup:
 	db 10, SNORLAX
 	db -1 ; end
 
-	; CAL (2) ; unused
+	; CAL (2)
+	db "C@", TRAINERTYPE_NORMAL
+	db 10, SNORLAX
+	db -1 ; end
 
 	; SHF (3)
 	db "SHF@", TRAINERTYPE_ITEM
@@ -494,14 +493,12 @@ ErikaGroup:  ; Not Sure Why SHF did it this way?
 	db 46,  BELLOSSOM, TM_FURY_CUTTER
 	db 73, TENTACRUEL, QUICK_CLAW
 	db -1 ; end
-	db 137, AERODACTYL, STAR_PIECE
-	db 152, SLOWBRO, $00
-	db $06
-	db ESCAPE_ROPE
-	db -1 ; end
 
 YoungsterGroup:
-	; YOUNGSTER (1) ; unused
+	; YOUNGSTER (1)
+	db "JOEY@", TRAINERTYPE_NORMAL
+	db  6, RATTATA
+	db -1 ; end
 
 	; YOUNGSTER (2)
 	db "MIKEY@", TRAINERTYPE_NORMAL
@@ -1304,7 +1301,7 @@ CooltrainerFGroup:
 	db 120, TYRANITAR
 	db 120, HYPNO
 	db 120, KINGDRA
-	db 120, $FF
+	db 120, $FF ; Will crash game on this Pokemon
 	db 145, DITTO
 	db 132, KABUTOPS
 	db 128, SLOWBRO

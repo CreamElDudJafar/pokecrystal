@@ -717,7 +717,7 @@ JohtoGrassWildMons:
 	db 83, DUGTRIO
 	db 83, STANTLER
 	db 82, SMOOCHUM
-	db 82, DEWGONG
+	db 83, DEWGONG
 	db 82, SHELLDER
 	db 82, GOLBAT
 	; nite
@@ -1199,11 +1199,11 @@ JohtoGrassWildMons:
 	; nite
 	db 7, GEODUDE
 	db 7, SANDSHREW
-	db 7, GEODUDE
-	db 7, GEODUDE
-	db 7, ZUBAT
-	db 7, ZUBAT
+	db 7, SWINUB
+	db 7, LARVITAR
 	db 7, DUNSPARCE
+	db 7, PHANPY
+	db 7, RHYHORN
 	end_grass_wildmons
 
 	def_grass_wildmons DARK_CAVE_BLACKTHORN_ENTRANCE
