@@ -19,11 +19,21 @@ Their is 2 branches here for you to choose from:
 Master- Crystal Kaizo (2025/2026 Update)
 2016- Crystal Kaizo (2016 Version)
 
+2025/2026 Update:
+- HMs Can Be Deleted Now
+- Game Title Displayed In Hall of Fame Display
+- When Repel Used, Will Ask To Use Another
+- Running Shoes/Sprites
+- Rare Candies cost 1 Dollar and can be bought in Indigo Plateau Mart
+- Moon Stone and Sun Stone now will say ABLE if using them to evolve Eevee
+
 CREDITS: Remaking Crystal Kaizo in disassembly could not have been done without the following contributors:
 
 - SHF for creating Crystal Kaizo and updating it in 2025/2026
 - Swampert/Swampert Tools for allowing me to read some of the code without reading Hex
 - Gold Finger/HxD hex editors for reading the Crystal Kaizo Hex code
+- CRzShadows for game name in Hall of Fame
+- Seasick for Kris Sprite, and Tom Wang for Chris Sprite
 - Pret for disassembly of Pokemon Crystak
 - DigitalZeroDomain for G2Map
 - Guzeinbuick for Gen 2 Toolbox tools and all creators of tools: https://www.pokecommunity.com/threads/gen-ii-toolbox-hacking-gsc-without-dissassemblies-in-2023.491799/
