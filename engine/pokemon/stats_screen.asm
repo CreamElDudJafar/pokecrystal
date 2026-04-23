@@ -761,8 +761,8 @@ LoadGreenPage:
 	db "MOVE@"
 
 LoadBluePage:
-	call StatsScreen_PrintHappiness
 	call .PlaceOTInfo
+	call StatsScreen_PrintAffection
 	hlcoord 10, 8
 	ld de, SCREEN_WIDTH
 	ld b, 10
@@ -837,20 +837,52 @@ LoadOrangePage:
 	call StatsScreen_Print_HiddenPow_Info
 	ret
 
-StatsScreen_PrintHappiness:
-	hlcoord 1, 15
-	ld [hl], $34 ; heart icon
-
-	hlcoord 3, 15
-	lb bc, 1, 3
-	ld de, wTempMonHappiness
-	call PrintNum
-	ld de, .outofMaxLoveString
-	hlcoord 4, 16
+StatsScreen_PrintAffection:
+	ld de, AffectionString
+	hlcoord 0, 15
 	call PlaceString
-	ret
-.outofMaxLoveString:
-	db "/255@"
+
+	ld a, [wTempMonHappiness]
+	ld de, MaxString
+	cp 255
+	jr z, .got_happiness
+	ld de, PoorString
+	cp 30
+	jr c, .got_happiness
+	ld de, LowString
+	cp 70
+	jr c, .got_happiness
+	ld de, MidString
+	cp 150
+	jr c, .got_happiness
+	ld de, GoodString
+	cp 220
+ 	jr c, .got_happiness
+	ld de, HighString
+.got_happiness
+	hlcoord 1, 16
+	jp PlaceString
+
+AffectionString:
+	db "CONDITION/@"
+	
+MaxString:
+	db "OVERJOYED@"
+	
+HighString:
+	db "HAPPY@"
+	
+GoodString:
+	db "CONTENT@"
+	
+MidString:
+	db "AVERAGE@"
+	
+LowString:
+	db "UNHAPPY@"
+	
+PoorString:
+	db "MISERABLE@"
 
 StatsScreen_PrintDVs:
 	hlcoord 1, 12

@@ -520,18 +520,18 @@ GetMapName_hlcoord: ; FarStringLength: ; thanks Rangi!
  ; input: a:de = "@"-terminated string
  ; output: adjusted hlcoord ;;;; c = length of string
  	push de
-     ld c, 0 ; str len
-     ld h, d
-     ld l, e
-     ld d, a ; bank
+     	ld c, 0 ; str len
+     	ld h, d
+     	ld l, e
+     	ld d, a ; bank
  .loop:
  	ld a, d ; bank
-     call GetFarByte
-     cp "@"
-     jr z, .get_hlcoord
-     inc c
-     inc hl
-     jr .loop
+     	call GetFarByte
+     	cp '@'
+     	jr z, .get_hlcoord
+     	inc c
+     	inc hl
+     	jr .loop
  .get_hlcoord
  	pop de
  	hlcoord 1, 8

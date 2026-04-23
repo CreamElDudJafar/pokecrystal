@@ -55,11 +55,11 @@ if DEF(_DEBUG)
 	givecoins MAX_COINS
 	; good party
 	givepoke MEW, 100, LEFTOVERS
-	givepoke SMEARGLE, 100, FOCUS_BAND
-	givepoke GYARADOS, 100, GOLD_BERRY
-	givepoke DIGLETT, 17
-	givepoke DITTO, 5
-	givepoke ABRA, 5
+	givepoke CHARIZARD, 100, FOCUS_BAND
+	givepoke LUGIA, 100, GOLD_BERRY
+	givepoke WOBBUFFET, 100
+	givepoke GENGAR, 100
+	givepoke ALAKAZAM, 100
 	; first mon shiny
 	loadmem wPartyMon1DVs+0, $ea
 	loadmem wPartyMon1DVs+1, $aa
@@ -152,6 +152,8 @@ if DEF(_DEBUG)
 	setflag ENGINE_FLYPOINT_NATIONAL_PARK
 	setflag ENGINE_FLYPOINT_BATTLE_TOWER
 	setflag ENGINE_CREDITS_SKIP
+        ; fill pokedex
+	callasm FillPokedex
 	; magnet train works
 	setevent EVENT_RESTORED_POWER_TO_KANTO
 	giveitem PASS
@@ -213,6 +215,22 @@ else
 	closetext
 	end
 endc
+
+FillPokedex:
+    	ld a, UNOWN_A
+    	ld [wFirstUnownSeen], a
+    	ld a, BULBASAUR
+    	ld [wScriptVar], a
+.loop
+    	ld a, [wScriptVar]
+    	dec a
+    	call SetSeenAndCaughtMon
+    	ld a, [wScriptVar]
+    	inc a
+    	cp EGG
+    	ret z
+    	ld [wScriptVar], a
+    	jr .loop
 
 PlayersHouseBookshelfScript:
 	jumpstd PictureBookshelfScript

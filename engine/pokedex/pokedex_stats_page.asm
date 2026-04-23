@@ -671,7 +671,7 @@ ELSE ; using EVs
 	ld a, b ; bank
 	call GetFarByte
 	inc hl
-	cp "@"
+	cp '@'
 	jr nz, .loop1
 ; hl should now be at height
 	push hl ; keep the ptr, for weight
@@ -696,7 +696,7 @@ IF !DEF(wBaseHPAtkDefSpdEVs) ; vanilla
 ELSE ; using EVs
  	hlcoord 6, 14
 ENDC
-	ld [hl], "′"
+	ld [hl], '′'
 ; get weight
 	pop af ; bank
 	pop hl ; ptr

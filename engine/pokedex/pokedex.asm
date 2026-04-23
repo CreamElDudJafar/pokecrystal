@@ -417,12 +417,12 @@ Pokedex_Page:
  	; add or remove shiny icon
  	hlcoord 8, 1
  	ld a, [hl]
- 	cp "<DEX_⁂>"
+ 	cp '<DEX_⁂>'
  	jr z, .shinyicon_set
- 	ld [hl], "<DEX_⁂>"
+ 	ld [hl], '<DEX_⁂>'
  	jr .done
  .shinyicon_set
- 	ld [hl], " "
+ 	ld [hl], ' '
  .done	
  	call Pokedex_toggle_shininess2
  	ret
@@ -436,12 +436,12 @@ Pokedex_Page:
  	; add or remove shiny icon
  	hlcoord 3, 11 ; 1, 9 ; 9, 7 ; 0, 9
  	ld a, [hl]
- 	cp "<DEX_⁂>"
+ 	cp '<DEX_⁂>'
  	jr z, .shinyicon_set
- 	ld [hl], "<DEX_⁂>"
+ 	ld [hl], '<DEX_⁂>'
  	jr .done
  .shinyicon_set
- 	ld [hl], " "
+ 	ld [hl], ' '
  .done	
  	call Pokedex_toggle_shininess2
  	ret
@@ -562,10 +562,10 @@ Pokedex_ReinitDexEntryScreen:
  	ld a, [wPokedexShinyToggle]
  	bit 0, a
  	jr z, .not_shiny
- 	ld [hl], "<DEX_⁂>"
+ 	ld [hl], '<DEX_⁂>'
  	jr .shiny_done
  .not_shiny
- 	ld [hl], " "
+ 	ld [hl], ' '
  .shiny_done
 	call WaitBGMap
 	call Pokedex_GetSelectedMon
@@ -849,10 +849,10 @@ Evos_Page:
  	ld a, [wPokedexShinyToggle]
  	bit 0, a
  	jr z, .not_shiny
- 	ld [hl], "<DEX_⁂>"
+ 	ld [hl], '<DEX_⁂>'
  	jr .shiny_done
  .not_shiny
- 	ld [hl], " "
+ 	ld [hl], ' '
  .shiny_done	
 	call WaitBGMap
 	ret
@@ -1034,10 +1034,10 @@ IF USING_INCREASED_SPRITE_ANIMATION == FALSE
  	ld a, [wPokedexShinyToggle]
  	bit 0, a
  	jr z, .not_shiny
- 	ld [hl], "<DEX_⁂>"
+ 	ld [hl], '<DEX_⁂>'
  	jr .shiny_done
  .not_shiny
- 	ld [hl], " "
+ 	ld [hl], ' '
  .shiny_done	
  	call WaitBGMap
  	ret
@@ -1820,7 +1820,7 @@ Pokedex_DrawDexEntryScreenBG:
  	ldh [rVBK], a
  	ld de, TextboxSpaceGFX
  	lb bc, BANK(TextboxSpaceGFX), 1
- 	ld hl, vTiles2 tile " "
+ 	ld hl, vTiles2 tile ' '
  	call Get2bpp
  	pop af
  	ldh [rVBK], a

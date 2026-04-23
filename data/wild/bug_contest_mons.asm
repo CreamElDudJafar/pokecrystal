@@ -11,3 +11,4 @@ ContestMons::
 	db  9, SCYTHER,    30, 31
 	db  9, VENOMOTH,   30, 31
 	db  9, HERACROSS,  30, 31
+	db -1

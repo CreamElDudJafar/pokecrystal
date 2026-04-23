@@ -495,6 +495,7 @@ wCurEnemyMoveNum:: db
 wEnemyHPAtTimeOfPlayerSwitch:: dw
 wPayDayMoney:: ds 3
 
+	ds 1
 wSafariMonEating:: db
 	ds 1
 wEnemyBackupDVs:: dw ; used when enemy is transformed
@@ -863,6 +864,11 @@ wc7d1:: ds 1
 wc7d2:: ds 1
 wc7d3:: ds 2
 ENDU
+
+
+SECTION "Unused Map Buffer", WRAM0
+
+	ds 24
 
 
 SECTION UNION "Overworld Map", WRAM0
@@ -3114,6 +3120,7 @@ wMobileBattleRoomSceneID::                        db
 
 ; fight counts
 wJackFightCount::    db
+	ds 1
 wHueyFightCount::    db
 wGavenFightCount::   db
 wBethFightCount::    db
@@ -3126,15 +3133,18 @@ wLizFightCount::     db
 wAnthonyFightCount:: db
 wToddFightCount::    db
 wGinaFightCount::    db
+	ds 1
 wArnieFightCount::   db
 wAlanFightCount::    db
 wDanaFightCount::    db
 wChadFightCount::    db
+	ds 1
 wTullyFightCount::   db
 wBrentFightCount::   db
 wTiffanyFightCount:: db
 wVanceFightCount::   db
 wWiltonFightCount::  db
+	ds 1
 wParryFightCount::   db
 wErinFightCount::    db
 
