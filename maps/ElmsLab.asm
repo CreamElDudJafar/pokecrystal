@@ -600,7 +600,18 @@ ElmsLabTrashcan:
 	jumptext ElmsLabTrashcanText
 
 ElmsLabPC:
+	checkevent EVENT_GOT_A_POKEMON_FROM_ELM
+	iftrue .fullpc
+.itempc
 	jumptext ElmsLabPCText
+	sjump .endpc
+.fullpc
+	opentext
+	special PokemonCenterPC
+	closetext
+	sjump .endpc
+.endpc
+	end
 
 ElmsLabBookshelf:
 	jumpstd DifficultBookshelfScript
