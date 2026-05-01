@@ -338,10 +338,10 @@ endc
 	cp STANDING
 	jr z, .ensurewalk
 	ldh a, [hJoypadDown]
-	and B_BUTTON
+	and PAD_B
 if DEF(_DEBUG)
 else
-	cp B_BUTTON		; Delete this line to Default Run, Press B to walk
+	cp PAD_B	; Delete this line to Default Run, Press B to walk
 endc
 	jr nz, .ensurewalk
 	ld a, [wPlayerState]

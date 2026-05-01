@@ -64,7 +64,7 @@ INCLUDE "engine/events/std_collision.asm"
 INCLUDE "engine/events/bug_contest/judging.asm"
 INCLUDE "engine/events/pokerus/apply_pokerus_tick.asm"
 INCLUDE "engine/events/bug_contest/contest_2.asm"
-INCLUDE "engine/pokemon/correct_party_errors.asm"
+;INCLUDE "engine/pokemon/correct_party_errors.asm" ; Unreferenced so removed for space
 INCLUDE "engine/math/get_square_root.asm"
 
 

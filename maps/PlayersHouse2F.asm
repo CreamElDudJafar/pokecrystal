@@ -26,7 +26,7 @@ PlayersHouse2FSetUpTileDecorationsCallback:
 	special ToggleMaptileDecorations
 	endcallback
 
-	db 0, 0, 0 ; unused
+;	db 0, 0, 0 ; unused
 
 PlayersHouseDoll1Script::
 	describedecoration DECODESC_LEFT_DOLL
@@ -63,12 +63,25 @@ if DEF(_DEBUG)
 	; first mon shiny
 	loadmem wPartyMon1DVs+0, $ea
 	loadmem wPartyMon1DVs+1, $aa
+	; second mon shiny
+	loadmem wPartyMon2DVs+0, $ea
+	loadmem wPartyMon2DVs+1, $aa
 	; third mon shiny
 	loadmem wPartyMon3DVs+0, $ea
 	loadmem wPartyMon3DVs+1, $aa
+	; fourth mon shiny
+	loadmem wPartyMon4DVs+0, $ea
+	loadmem wPartyMon4DVs+1, $aa
+	; fifth mon shiny
+	loadmem wPartyMon5DVs+0, $ea
+	loadmem wPartyMon5DVs+1, $aa
+	; sixth mon shiny
+	loadmem wPartyMon6DVs+0, $ea
+	loadmem wPartyMon6DVs+1, $aa
 	; useful moves
 	loadmem wPartyMon1Moves+0, THUNDERBOLT
 	loadmem wPartyMon1Moves+1, ICE_BEAM
+	loadmem wPartyMon1Moves+2, FLAMETHROWER
 	loadmem wPartyMon1Moves+2, FLAMETHROWER
 	; overworld moves
 	loadmem wPartyMon1Moves+3, FLY
@@ -158,10 +171,12 @@ if DEF(_DEBUG)
 	setevent EVENT_RESTORED_POWER_TO_KANTO
 	giveitem PASS
 	; useful items
+	giveitem RARE_CANDY, MAX_ITEM_STACK
 	giveitem MAX_REPEL, MAX_ITEM_STACK
 	giveitem ESCAPE_ROPE, MAX_ITEM_STACK
+	giveitem MAX_REVIVE, MAX_ITEM_STACK
+	giveitem MAX_ELIXER, MAX_ITEM_STACK
 	giveitem SACRED_ASH, MAX_ITEM_STACK
-	giveitem RARE_CANDY, MAX_ITEM_STACK
 	; all balls
 	giveitem MASTER_BALL, MAX_ITEM_STACK
 	giveitem POKE_BALL, MAX_ITEM_STACK
@@ -173,6 +188,17 @@ if DEF(_DEBUG)
 	giveitem FRIEND_BALL, MAX_ITEM_STACK
 	giveitem MOON_BALL, MAX_ITEM_STACK
 	giveitem LOVE_BALL, MAX_ITEM_STACK
+	; all berries
+	giveitem BERRY, MAX_ITEM_STACK
+	giveitem GOLD_BERRY, MAX_ITEM_STACK
+	giveitem ICE_BERRY, MAX_ITEM_STACK
+	giveitem MINT_BERRY, MAX_ITEM_STACK
+	giveitem MIRACLEBERRY, MAX_ITEM_STACK
+	giveitem MYSTERYBERRY, MAX_ITEM_STACK
+	giveitem BITTER_BERRY, MAX_ITEM_STACK
+	giveitem BURNT_BERRY, MAX_ITEM_STACK
+	giveitem PSNCUREBERRY, MAX_ITEM_STACK
+	giveitem PRZCUREBERRY, MAX_ITEM_STACK
 	; intro events
 	addcellnum PHONE_MOM
 	setmapscene PLAYERS_HOUSE_1F, $1
