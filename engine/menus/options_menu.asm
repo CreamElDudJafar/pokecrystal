@@ -495,7 +495,7 @@ UpdateFrame:
 	inc a
 	ld e, a
 	ld d, 0
-	hlcoord 16, 15
+	hlcoord 16, 15 ; where on the screen the number is drawn
 	inc hl
 	ld a, ' '
 	ld [hld], a

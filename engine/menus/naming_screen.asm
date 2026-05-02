@@ -894,8 +894,8 @@ INCBIN "gfx/naming_screen/cursor.2bpp"
 
 INCLUDE "data/text/name_input_chars.asm"
 
-NamingScreenGFX_End: ; unreferenced
-INCBIN "gfx/naming_screen/end.1bpp"
+;NamingScreenGFX_End: ; unreferenced- removed
+;INCBIN "gfx/naming_screen/end.1bpp"
 
 NamingScreenGFX_MiddleLine:
 INCBIN "gfx/naming_screen/middle_line.1bpp"
